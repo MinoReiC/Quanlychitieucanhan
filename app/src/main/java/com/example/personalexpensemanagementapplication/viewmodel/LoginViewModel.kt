@@ -11,7 +11,8 @@ import kotlinx.coroutines.flow.update
 data class SignInState(
     val isSignInSuccessful: Boolean = false,
     val signInError: String? = null,
-    val userData: UserData? = null // Thêm thuộc tính này
+    val userData: UserData? = null, // Thêm thuộc tính này
+    val prefilledEmail: String? = null // Thêm để prefill email khi cần
 )
 
 class LoginViewModel : ViewModel() {
@@ -26,6 +27,14 @@ class LoginViewModel : ViewModel() {
             signInError = result.errorMessage,
             userData = result.data // Lưu lại dữ liệu người dùng
         ) }
+    }
+
+    fun setPrefilledEmail(email: String?) {
+        _state.update { it.copy(prefilledEmail = email) }
+    }
+
+    fun clearPrefilledEmail() {
+        _state.update { it.copy(prefilledEmail = null) }
     }
 
     // Đặt lại trạng thái

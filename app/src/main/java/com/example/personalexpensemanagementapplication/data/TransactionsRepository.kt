@@ -1,14 +1,28 @@
 package com.example.personalexpensemanagementapplication.data
 
-object TransactionsRepository {
-    var monthlyLimit = 25000000.0 // 25 triệu VNĐ
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateListOf
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 
-    val items = listOf(
-        Transaction("🍔", "Ăn uống", -55000.0, "2h ago"),
-        Transaction("🚌", "Di chuyển", -150000.0, "1d ago"),
-        Transaction("👕", "Mua sắm", -1200000.0, "3d ago"),
-        Transaction("💰", "Lương", 5000000.0, "5d ago"),
-        Transaction("💡", "Tiền điện", -450000.0, "6d ago"),
-        Transaction("🎬", "Giải trí", -250000.0, "1w ago")
-    )
+object TransactionsRepository {
+
+    // tháng mới → mặc định = 0
+    var monthlyLimit by mutableStateOf(0.0)
+
+    // danh sách giao dịch trống giống app mới cài
+    private val _items = mutableStateListOf<Transaction>()
+
+    // public read-only view
+    val items: List<Transaction> get() = _items
+
+    // thêm giao dịch
+    fun addTransaction(tx: Transaction) {
+        _items.add(0, tx) // thêm lên đầu
+    }
+
+    // xoá giao dịch
+    fun removeTransaction(tx: Transaction) {
+        _items.remove(tx)
+    }
 }

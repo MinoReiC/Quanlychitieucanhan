@@ -1,41 +1,49 @@
 {
   "project_info": {
-    "project_number": "118934518545",
-    "project_id": "quan-li-chi-tieu-f318a",
-    "storage_bucket": "quan-li-chi-tieu-f318a.firebasestorage.app"
+    "project_number": "852421465072",
+    "project_id": "data003-c339e",
+    "storage_bucket": "data003-c339e.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:118934518545:android:0bbd2f3c049ebf461f2ab0",
+        "mobilesdk_app_id": "1:852421465072:android:f152058fce7930042ac335",
         "android_client_info": {
           "package_name": "com.example.personalexpensemanagementapplication"
         }
       },
       "oauth_client": [
         {
-          "client_id": "118934518545-3cno0v50bl6h29el7ufo0tshv56m3fdt.apps.googleusercontent.com",
+          "client_id": "852421465072-1jshvirc9foqtrinnfh6oh7ilsp5q5on.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.personalexpensemanagementapplication",
-            "certificate_hash": "62d6ae9c45113bd1fadf64789aeac5bdc00186bd"
+            "certificate_hash": "0956fad27e27fdca12834a8086faaf4a234c2320"
           }
         },
         {
-          "client_id": "118934518545-gjb8738rkq6pv0tg9novh0k3vgon68hg.apps.googleusercontent.com",
+          "client_id": "852421465072-bt2tll3dihtel4qdd1deoe3u6jk0jq1j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.personalexpensemanagementapplication",
+            "certificate_hash": "3b6cb57afd2390da076c6f5615974e8e8c1612d5"
+          }
+        },
+        {
+          "client_id": "852421465072-j9i4okf4tikeimkqrsv6r3m4ibe8vs5f.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB8DAR7KeEFN2WBuTeJcYFEXqID1FYr2kM"
+          "current_key": "AIzaSyDKNlzQlUjR1E6dgV99Oe0qTQCN9EM8bFU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "118934518545-gjb8738rkq6pv0tg9novh0k3vgon68hg.apps.googleusercontent.com",
+              "client_id": "852421465072-j5m4b1cf8vmitftbfbme9snj76nr0svi.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
